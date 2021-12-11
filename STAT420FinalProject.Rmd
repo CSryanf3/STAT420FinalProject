@@ -1,0 +1,13 @@
+---
+title: "STAT420FinalProject"
+author: "Ryan Flynn & Mike Sansone"
+output: pdf_document
+---
+## Import CSV File
+
+```{r importcsv}
+nbadata = read.csv("all_seasons.csv")
+colnames(nbadata)
+paste("Categories:", ncol(nbadata))
+paste("Players:", nrow(nbadata))
+```
